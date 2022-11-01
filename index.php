@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-hello
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +24,8 @@ hello
             <div class="col-12">
                 <form id="regForm" action="amount.php" method="post" enctype="multipart/form">
                     <h1 id="register">Donate</h1>
-                    <div class="all-steps" id="all-steps"> <span class="step">1</span> <span class="step">2</span></div>
+                    <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span
+                            class="step"></span> <span class="step"></span> </div>
                     <div class="tab">
                         <div class="container-fluid">
 
@@ -37,7 +37,7 @@ hello
                                 </div>
                                 <div class="col-12 col-md-4 d-flex">
                                     <button type="button" onclick="decrement(1)">-</button>
-                                    <input id="1" type="number" name="1" min="10000">
+                                    <input id="1" type="number" name="1" min="100000" value="" placeholder="500000">
                                     <button type="button" onclick="increment(1)">+</button>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ hello
 
 
 
-                            Total : <input type="number" name="total" id="total" />
+                            Total : <input type="text" name="total" id="total" />
                         </div>
 
                     </div>
@@ -168,8 +168,7 @@ hello
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <lable>First Name
-                                    </lable>
+                                    <lable>First Name</lable>
                                     <input type="text" name="firstName">
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -206,11 +205,17 @@ hello
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <lable>Aadhar</lable>
-                                    <input type="text" name="aadhar" pattern="^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$"
-                                        ;>
+                                    <input type="text" name="aadhar">
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="tab">
+
+
+                    </div>
+                    <div class="tab">
 
                     </div>
 
@@ -263,10 +268,9 @@ hello
 
 
     <script src="./main.js" type="text/javascript"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>
