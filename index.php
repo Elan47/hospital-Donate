@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="col-12 col-md-4 d-flex">
                                     <button type="button" onclick="decrement(1)">-</button>
-                                    <input id="1" type="number" name="1" min="100000" value="" placeholder="500000">
+                                    <input id="1" type="number" name="1" min="100000" value="">
                                     <button type="button" onclick="increment(1)">+</button>
                                 </div>
                             </div>
@@ -159,7 +159,167 @@
 
                             Total : <input type="text" name="total" id="total" />
                         </div>
-
+                        <br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Department
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Amount</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    CSSD
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Radiology
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Cardiology
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Ambulance
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    General ward 43 Beds
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    ICU Equipment
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Endoscopy suite
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Medical Furniture
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Major Operation theatre-01
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Major Operation theatre-02
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Minior Operation theatre-03
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Microbiology lab
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Biochemistry lab
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Histotopathology lab
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    Oxygen Generator Plant
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <button type="button" onclick="decrement(1)">-</button>
+                                    <input id="1" type="number" name="1" min="100000" value="">
+                                    <button type="button" onclick="increment(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- details -->
@@ -269,7 +429,7 @@
 
     <script src="./main.js" type="text/javascript"></script>
     <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        crossorigin="anonymous">
     </script>
 </body>
 
