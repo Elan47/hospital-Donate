@@ -46,22 +46,66 @@ function validateForm() {
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
     // A loop that checks every input field in the current tab:
-    /*   for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-              // add an "invalid" class to the field:
-              y[i].className += " invalid";
-              // and set the current valid status to false
-              valid = false;
-          }
-      } */
+    for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].type == "text") {
+            if (y[i].value == "") {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+            }
+        }
+        // If a Total is empty...
+        if (y[i].name == "total") {
+            if (y[i].value == "" || y[i].value < "100000") {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+                // alert("Please Select a Donation Amount!");
+            }
+        }
+
+        // if proper Pan card 
+        if (y[i].name == "pan") {
+            var panRx = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+            var panCheck = panRx.test(y[i].value);
+            if (panCheck == false) {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+
+                // alert("Please Enter a valid Pan Number");
+            }
+
+        }
+
+        // if proper Aadhar card 
+        if (y[i].name == "aadhar") {
+            // var aadharRx = /^[2-9]{1}[0-9]{11}$/;
+            var aadharRx = /^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$/;
+            var aadharCheck = aadharRx.test(y[i].value);
+            if (aadharCheck == false) {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+
+                alert("Please Enter a valid Aadhar Number");
+            }
+
+        }
+    }
     // If the valid status is true, mark the step as finished and valid:
     if (valid) {
         document.getElementsByClassName("step")[currentTab].className += " finish";
     }
     return valid; // return the valid status
-}
 
+
+}
 function fixStepIndicator(n) {
     // This function removes the "active" class of all steps...
     var i, x = document.getElementsByClassName("step");
