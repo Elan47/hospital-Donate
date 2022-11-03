@@ -11,13 +11,13 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == x.length - 1) {
+  if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
   //... and run a function that will display the correct step indicator:
-  fixStepIndicator;
+  fixStepIndicator(n)
 }
 
 function nextPrev(n) {
@@ -42,10 +42,7 @@ function nextPrev(n) {
 
 function validateForm() {
   // This function deals with validation of the form fields
-  var x,
-    y,
-    i,
-    valid = true;
+  var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
@@ -70,7 +67,7 @@ function validateForm() {
       }
     }
 
-    // if proper Pan card
+    // if proper Pan card 
     if (y[i].name == "pan") {
       var panRx = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
       var panCheck = panRx.test(y[i].value);
@@ -80,11 +77,12 @@ function validateForm() {
         // and set the current valid status to false
         valid = false;
 
-        alert("Please Enter a valid Pan Number");
+        // alert("Please Enter a valid Pan Number");
       }
+
     }
 
-    // if proper Aadhar card
+    // if proper Aadhar card 
     if (y[i].name == "aadhar") {
       // var aadharRx = /^[2-9]{1}[0-9]{11}$/;
       var aadharRx = /^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$/;
@@ -97,6 +95,7 @@ function validateForm() {
 
         alert("Please Enter a valid Aadhar Number");
       }
+
     }
   }
   // If the valid status is true, mark the step as finished and valid:
@@ -104,11 +103,12 @@ function validateForm() {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid; // return the valid status
+
+
 }
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
-  var i,
-    x = document.getElementsByClassName("step");
+  var i, x = document.getElementsByClassName("step");
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
